@@ -101,7 +101,7 @@ if __name__ == "__main__":
                     sys.exit(0)
 
             with open(fpath) as f:
-                archive = f.readline()
+                archive = f.readline(archive)
                 os.makedirs(archive, exist_ok=True)
                 os.chdir(archive)
                 AllTools().show_options()
